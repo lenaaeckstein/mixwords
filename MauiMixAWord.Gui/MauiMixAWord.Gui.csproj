@@ -64,6 +64,10 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <ProjectReference Include="..\MauiAppMixWord.Core7\MauiAppMixWord.Core7.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
 	  <Reference Include="Rasser.Lib">
 	    <HintPath>..\..\..\Downloads\Rasser.Lib.dll</HintPath>
 	  </Reference>

@@ -21,11 +21,29 @@ public partial class MixViewModel : ObservableObject
     private string _mix = string.Empty;
 
 
+
+   
+
     // Das ich es ausgeben kann
     [RelayCommand]
     void Do()
+
+
     {
-         this.Mix = Rasser.Lib.String.Shuffle(this.Word);
-        this.Word= string.Empty;
+        if (Word.Length < 3)
+        {
+            // nichts so schöne Ausgabe
+            App.Current.MainPage.DisplayAlert("Achtung! Fehler!", "Geben sie bitte mehr als 3 Buchstaben ein", "OK");
+        }
+        else 
+        {
+            //this.Mix = Rasser.Lib.String.Shuffle(this.Word);
+            //this.Word = string.Empty;
+
+            MauiAppMixWord.Core7.Mix m = new MauiAppMixWord.Core7.Mix();
+            this.Mix=m.MixIt(this.Word);
+            this.Word=string.Empty;
+        }3,
     }
+
 }

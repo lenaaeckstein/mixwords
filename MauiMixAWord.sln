@@ -5,7 +5,9 @@ VisualStudioVersion = 17.9.34723.18
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MauiMixAWord.Gui", "MauiMixAWord.Gui\MauiMixAWord.Gui.csproj", "{4490DFE0-A168-4F9D-B899-0594AAAA3D01}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MauiAppMixWords.Cli", "MauiAppMixWords.Cli\MauiAppMixWords.Cli.csproj", "{F2D31A97-888B-4114-8D4E-D2A14AF27EBF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MauiAppMixWords.Cli", "MauiAppMixWords.Cli\MauiAppMixWords.Cli.csproj", "{F2D31A97-888B-4114-8D4E-D2A14AF27EBF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MauiAppMixWord.Core7", "MauiAppMixWord.Core7\MauiAppMixWord.Core7.csproj", "{1D697264-EABE-4F9B-8993-7F58D8A29E7A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,6 +25,10 @@ Global
 		{F2D31A97-888B-4114-8D4E-D2A14AF27EBF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F2D31A97-888B-4114-8D4E-D2A14AF27EBF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F2D31A97-888B-4114-8D4E-D2A14AF27EBF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1D697264-EABE-4F9B-8993-7F58D8A29E7A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D697264-EABE-4F9B-8993-7F58D8A29E7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D697264-EABE-4F9B-8993-7F58D8A29E7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D697264-EABE-4F9B-8993-7F58D8A29E7A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
