@@ -1,0 +1,92 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Rasser.Lib</name>
+    </assembly>
+    <members>
+        <member name="T:Rasser.Lib.File">
+            <summary>
+            Custom File Library
+            </summary>
+        </member>
+        <member name="M:Rasser.Lib.File.Write(System.String)">
+            <summary>
+            Writes a string to the file rasser.txt
+            </summary>
+            <param name="row">the string to write</param>
+            <returns>true if it was successfully, or false on failure</returns>
+        </member>
+        <member name="T:Rasser.Lib.LibException">
+            <summary>
+            LibException class
+            </summary>
+        </member>
+        <member name="M:Rasser.Lib.LibException.#ctor">
+            <summary>
+            Initializes a new instance of the LibException
+            </summary>
+        </member>
+        <member name="M:Rasser.Lib.LibException.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the LibException with a specified error message
+            </summary>
+            <param name="message">The message that describes the error.</param>
+        </member>
+        <member name="M:Rasser.Lib.LibException.#ctor(System.String,System.Exception)">
+            <summary>
+            Initializes a new instance of the LibException with a specified error message
+            </summary>
+            <param name="message">The message that describes the error.</param>
+            <param name="inner">The inner Exception class</param>
+        </member>
+        <member name="T:Rasser.Lib.String">
+            <summary>
+            Custom String Library
+            </summary>
+        </member>
+        <member name="M:Rasser.Lib.String.CamelCase(System.String)">
+            <summary>
+            Creates a camelcased string
+            </summary>
+            <param name="word">The word to change.</param>
+            <returns>the camelcased string.</returns>
+        </member>
+        <member name="M:Rasser.Lib.String.Reverse(System.String)">
+            <summary>
+            Reverses the string
+            </summary>
+            <param name="word">The word to reverse.</param>
+            <returns>The reversed string.</returns>
+        </member>
+        <member name="M:Rasser.Lib.String.Upper(System.String)">
+            <summary>
+            Returns an uppercased string.
+            </summary>
+            <param name="word">The word to convert.</param>
+            <returns>The uppercased string</returns>
+        </member>
+        <member name="M:Rasser.Lib.String.Shuffle(System.String)">
+            <summary>
+            Shuffle the string
+            </summary>
+            <param name="word">The word to shuffle</param>
+            <returns>The shuffled string.</returns>
+        </member>
+        <member name="M:Rasser.Lib.String.Random(System.Int32,System.String)">
+            <summary>
+            Get a random string.
+            </summary>
+            <param name="length">Specify the number of characters in the string.</param>
+            <param name="pattern">Set the pattern to use.</param>
+            <returns>A random string.</returns>
+        </member>
+        <member name="M:Rasser.Lib.String.Count(System.String,System.String)">
+            <summary>
+            Returns the length of a string
+            </summary>
+            <param name="word">Count the string length of this word.</param>
+            <param name="search">Set the search pattern (only one character in string) to search for.</param>
+            <returns>The number of characters in the string</returns>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewmodels="clr-namespace:MauiMixAWord.Gui.ViewModels"
+             Shell.NavBarIsVisible="False"
+             x:DataType="viewmodels:MixViewModel"
+             x:Class="MauiMixAWord.Gui.MainPage">
+
+    <Grid Margin="10"
+        ColumnDefinitions="Auto, *"
+        RowDefinitions="Auto,Auto,Auto,Auto" 
+          ColumnSpacing="10">
+        
+        
+        <Label  Text="Mix a word..."
+                HorizontalTextAlignment="Center"
+                TextColor="{AppThemeBinding
+                Dark={StaticResource Primary},
+                Light={StaticResource Primary}
+                }"
+                FontSize="Large" Grid.ColumnSpan="2" />
+                
+                <Label FontSize="Subtitle" 
+                       VerticalOptions="Center"
+                       Text="Word" Grid.Row="1"/>
+            <Entry Grid.Row="1" Grid.Column="1"
+                       Text="{Binding Word}"
+                        ReturnCommand="{Binding DoCommand}"/>
+
+        <StackLayout Grid.Row="2">
+            
+            <Label  FontAttributes="Bold"
+                    FontSize="Medium" 
+                    Text="Mixed Word"/>
+            
+            <Label FontSize="Medium" 
+                   Text="{Binding Mix}" />
+           
+
+        </StackLayout>
+
+        <Button Grid.Row="3"
+                 Grid.ColumnSpan="2"
+                 Text="Mix a Word"
+                 Command="{Binding DoCommand}" />
+    </Grid>
+    
+</ContentPage>
